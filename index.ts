@@ -59,6 +59,7 @@ app.post('/notifications', (req, res) => {
   
   // Process the Gmail notification
   // ...
+  // You would probably want a new auth client here with the stored token for that user above 
 
   res.status(200).send('Notification processed');
 });
