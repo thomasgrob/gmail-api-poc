@@ -11,3 +11,11 @@ This proof of concept demonstrates how to integrate Google OAuth for Gmail acces
 - Setup permissions for the topic:
     - Principal: gmail-api-push@system.gserviceaccount.com
     - Role: Pub/Sub Publisher
+ 
+## Notes
+
+Google cloud pub/sub subscriptions require the PUSH endpoint URL to be HTTPS, this makes it annoying for local dev.
+Suggest using something like [ngrok](https://ngrok.com/) to create a HTTPS proxy and use that URL in your subscription settings.
+
+# Example:
+![subscription settings](https://i.imgur.com/j0HOYRL.png)
