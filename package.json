@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/propertyease/gmail-poc/issues"
   },
-  "homepage": "https://github.com/propertyease/gmail-poc#readme"
+  "homepage": "https://github.com/propertyease/gmail-poc#readme",
+  "dependencies": {
+    "@google-cloud/pubsub": "^4.0.7",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "googleapis": "^128.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.1"
+  }
 }
